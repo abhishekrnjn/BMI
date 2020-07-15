@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BMI Skeleton Project</string>
+
+    <string name="weight_text">Weight in Kgs</string>
+    <string name="height_text">Height in cms </string>
+    <string name="button_text_view">calculate</string>
+    <string name="todo">TODO</string>
+</resources>

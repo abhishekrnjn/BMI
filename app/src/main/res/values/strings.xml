@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BMI Skeleton Project</string>
+    <string name="app_name">Check My BMI</string>
 
     <string name="weight_text">Weight in Kgs</string>
     <string name="height_text">Height in cms </string>

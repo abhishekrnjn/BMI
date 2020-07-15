@@ -25,25 +25,21 @@ class MainActivity : AppCompatActivity() {
 
         if(myBmi<18.5){
             image_view.setImageResource(R.drawable.underweight)
-            bmi_text_view.text="Under Weight"
         }
         else if(myBmi>18.5 && myBmi<24.9){
             image_view.setImageResource(R.drawable.healthy)
-            bmi_text_view.text="Healthy"
         }
         else if(myBmi>24.5 && myBmi<29.9){
             image_view.setImageResource(R.drawable.overweight)
-            bmi_text_view.text="Over Weight"
         }
         else{
             image_view.setImageResource(R.drawable.obesity)
-            bmi_text_view.text="Obese"
         }
     }
 
     fun calculateBMI(weight: Double, height: Double): Float{
         var BMI: Float
-        BMI = (weight/(height)*(height)).toFloat()
+        BMI = (weight/((height*0.01)*(height*0.01))).toFloat()
         return BMI
     }
 }
